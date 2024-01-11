@@ -13,7 +13,7 @@ export class ClienteListComponent implements OnInit {
 
   //#region [Properties]
   //Property DisplayedColumns
-  private _displayedColumns: string[] = ['id','name'];
+  private _displayedColumns: string[] = ['id','nomeCliente'];
   get displayedColumns() { return this._displayedColumns; }
   set displayedColumns(value) { this._displayedColumns = value; }
 
@@ -56,6 +56,7 @@ export class ClienteListComponent implements OnInit {
     this.messageErro = 'Erro ao listar os clientes!';
     this.clienteListService.list().subscribe(list => {
       this.dataSource = list;
+      console.log(list);
     }, err => {
       console.log(this.messageErro, err);
     })

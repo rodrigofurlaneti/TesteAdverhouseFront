@@ -8,7 +8,7 @@ import { ClienteModel } from 'src/interface/cliente.interface';
 })
 export class ClienteListService {
 
-  private route = 'https://localhost:7016/Cliente';
+  private route = 'https://localhost:7116/Cliente';
 
   constructor(private http: HttpClient) { }
 

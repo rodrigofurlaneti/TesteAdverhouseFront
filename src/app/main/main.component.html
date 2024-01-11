@@ -11,13 +11,13 @@
               Cliente
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Adicionar</a></li>
+              <li><a class="dropdown-item" routerLink="/cliente-create">Adicionar</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Editar</a></li>
+              <li><a class="dropdown-item" routerLink="/cliente-update">Editar</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Excluir</a></li>
+              <li><a class="dropdown-item" routerLink="/cliente-delete">Excluir</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="/cliente-list">Listar todos</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/cliente-list']">Listar todos</a></li>
             </ul>
           </li>
         </ul>
